@@ -18,9 +18,4 @@ jobs:
         with:
             username: ${{ vars.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-            push: true
-            tags: gmakarova/flask-app:1.0.0
+            
